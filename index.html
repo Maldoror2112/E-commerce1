@@ -5,9 +5,10 @@
 <title> </title>
 <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="HandheldFriendly" content="true">
-	<link rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" />
+	<meta name="MobileFriendly" content="true">
+	<link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="cs/mischiffStyle.css" media="screen, handheld"/>
+	<link rel="stylesheet" type="text/css" href="cs/moreStyle.css" media="screen  and (min-width: 40.5em)"/>
 	<!--[if (lt IE 9)&(!IEMobile)]>
 	<link rel="stylesheet" type="text/css" href="enhanced.css" />
 	<![endif]-->
@@ -19,8 +20,12 @@
 	<header role="banner">
 		<div>
 			<h1 class="logo"><a href="#"><img src="images/GFGLogo1_4Websm.png" alt="GFGLogo"/></a></h1>
-			<ul id="search" action="#" method="post" class="search reveal">
-			<form id="search" action="#" method="post" class="search reveal">
+             <ul  id="nav-anchors" class="nav-anchors">
+            	<li><a href="#nav" id="menu-anchor">Menu</a></li>
+            	<li><a href="#search" id="search-anchor">Search</a></li>
+            </ul>
+			<ul id="search" action="#" method="post" class="search-reveal">
+			<form id="search" action="#" method="post" class="search-reveal">
 				<fieldset>
 					<legend>Search the Site</legend>
 					<label for="search-site">Search the Site </label>
@@ -81,6 +86,9 @@
 							<option value="Black">Black</option>
 						</select>
 					</div>
+					<div>
+						<input type="submit" class="button" value="Add to Cart"/>
+					</div>
 				</fieldset>
 			</form><!--End of product form-->
 			<div class="product-utils">
@@ -124,6 +132,7 @@
 			</ul>
 		</div>
 	</footer><!-- end of Footer! -->
-	<script type="" <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
 </body>
 </html>
