@@ -32,11 +32,11 @@
 					<input type="submit" value="Search"/>
 				</fieldset>
 			</form>
-			<nav>
+			<nav id="nav" class="nav-reveal">
 				<ul role="navigation">
 					<li><a href-"#">Mischiffs</a></li>
 					<li><a href-"#">Munchies</a></li>
-					<li><a href-"#">Accesories</a></li>
+					<li><a href-"#">Accessories</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -54,39 +54,43 @@
 						<li class="star">&#9733;</li>
 						<li>&#9734;</li>
 					</ol>
-					<a href=#reveiws" class="review-count">Reviews!!!</a>
+					<a href="#reveiws" class="review-count">Reviews!!!</a>
 				</div>
 			</header>
 			<div id="item-img" class="item-img">
-				<figure>
-					<img src="images/MunchieBundlePack20.png" alt="Mischiff Characters20"/>
-				</figure>
 				<nav>
-					<ul>
+					<ul class="thumbnails">
 						<li><a href="images/MisChiffGiesha.png"><img src="images/MisChiffGiesha_thumb.png"></a><li/>
 						<li><a href="images/MisChiffCatWomanPurple.png"><img src="images/MisChiffCatWomanPurple_thumb.png"></a><li/>
 						<li><a href="images/GoodKnight.png"><img src="images/GoodKnight_thumb.png"></a><li/>
 					</ul>
 				</nav>
-			</div><!-- End of Product images-->
+                <figure class="img-container" id="img-container">
+					<img src="images/MunchieBundlePack20.png" alt="Mischiff Characters20"/>
+				</figure>
+			</div> <!--End of product images-->
 			<form method="post" action="#" id="product-form" class="product-form">
 				<fieldset>
 					<legend>Add to Cart</legend>
 					<div class="quantity-field">
-						<label for="qty">Quantity</label>
-						<input name="qty" id="qty" class="qty" type="number" pattern="[0-9]*" value="1" min="1" max="999"/>
+						<label for="quantity">Quantity</label>
+						<input name="quantity" id="quantity" class="quantity" type="number" pattern="[0-9]*" value="1" min="1" max="999"/>
 					</div>
-					<div class=size-field>
-						<label for="color">Color</label>
-						<select id="color" name="color">
-							<option value="Blue">Blue</option>
-							<option value="Red">Red</option>
-							<option value="Green">Green</option>
-							<option value="Orange">Orange</option>
-							<option value="Black">Black</option>
-						</select>
+					<div class="size-field">
+						<p>
+						  <label for="color">Color</label>
+					  </p>
+						<p>
+						  <select id="color" name="color">
+						    <option value="Blue">Blue</option>
+						    <option value="Red">Red</option>
+						    <option value="Green">Green</option>
+						    <option value="Orange">Orange</option>
+						    <option value="Black">Black</option>
+					      </select>
+					  </p>
 					</div>
-					<div>
+					<div class="submit-form">
 						<input type="submit" class="button" value="Add to Cart"/>
 					</div>
 				</fieldset>
